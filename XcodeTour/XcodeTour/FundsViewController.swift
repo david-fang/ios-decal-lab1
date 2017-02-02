@@ -23,15 +23,16 @@ class FundsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     func discoverFunds() {
         let url = NSURL(string: fundsURL)
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             
-            let amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
+            var amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
         
             //TODO: Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
             //YOU MAY NOT USE INTEGER VALUES HERE, THERE IS A PREDEFINED CONSTANT SOMEWHERE IN THE PROJECT THAT YOU HAVE TO FIND
-            //amountLeft += 0
+            amountLeft = String(recovery10)
             
             if Int(amountLeft) == 1000000 {
                 self.success()
@@ -43,29 +44,22 @@ class FundsViewController: UIViewController {
     }
     
     func success() {
-        textView.text = "Congrats, you've recovered the public funds and finished this lab!"
-        textView.textColor = UIColor.green
-        imageView.image = UIImage(named: "nice")
+        DispatchQueue.main.async {
+            self.textView.text = "Congrats, you've recovered the public funds and finished this lab!"
+            self.textView.textColor = UIColor.green
+            self.imageView.image = UIImage(named: "nice")
+        }
     }
 
     func fail() {
-        textView.text = "Oops, you've recovered the wrong amount, remember to carefully pick the value"
-        imageView.image = UIImage(named: "tryagain")
+        DispatchQueue.main.async {
+            self.textView.text = "Oops, you've recovered the wrong amount, remember to carefully pick the value"
+            self.imageView.image = UIImage(named: "tryagain")
+        }
     }
 
     func print(_ items: Any?) {
         //You are not allowed to use print to debug!
         print("DON'T USE PRINT STATEMENT")
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

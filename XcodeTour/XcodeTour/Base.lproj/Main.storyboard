@@ -163,26 +163,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iff-Qw-7gS">
-                                <rect key="frame" x="55" y="127" width="264" height="131"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Chancellor Dirks has stolen our public funds! You will use the handy debugging knowledge to find the amount left, search the project for a constant that was stolen and restore the funds!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpI-V7-T1T">
-                                <rect key="frame" x="16" y="307" width="343" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="8kg-wF-ZVD"/>
-                                </constraints>
-                                <string key="text">Your job now is to find where the public funds have been discovered, search through the project for a constant that when added, exactly matches the desired funds, and add them up to get the right value</string>
+                                <rect key="frame" x="16" y="278" width="343" height="101.5"/>
+                                <string key="text">Your job now is to find where the public funds have been discovered, search through the project for a constant that when added, exactly matches the desired funds, and add them up to get the right value.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-u5-TeM">
-                                <rect key="frame" x="88" y="426" width="198" height="125"/>
+                                <rect key="frame" x="88" y="488" width="198" height="125"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="Pbd-iT-h47"/>
                                     <constraint firstAttribute="height" constant="125" id="Xc2-O3-cY5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -193,23 +184,31 @@
                                     <segue destination="ymq-Zx-yAK" kind="showDetail" id="Bqk-gY-Z6X"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iff-Qw-7gS">
+                                <rect key="frame" x="55" y="117" width="264" height="131"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="D1E-Io-jJB"/>
+                                    <constraint firstAttribute="height" constant="131" id="EU0-Iz-gSa"/>
+                                </constraints>
+                                <string key="text">Chancellor Dirks has stolen our public funds! You will use the handy debugging knowledge to find the amount left, search the project for a constant that was stolen and restore the funds!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HpI-V7-T1T" firstAttribute="top" secondItem="iff-Qw-7gS" secondAttribute="bottom" constant="49" id="2Z1-SC-Y6q"/>
+                            <constraint firstItem="iff-Qw-7gS" firstAttribute="top" secondItem="NyD-yz-HmM" secondAttribute="bottom" constant="56" id="2HE-BT-sro"/>
+                            <constraint firstItem="HpI-V7-T1T" firstAttribute="top" secondItem="iff-Qw-7gS" secondAttribute="bottom" constant="30" id="2Z1-SC-Y6q"/>
                             <constraint firstItem="NyD-yz-HmM" firstAttribute="centerX" secondItem="iff-Qw-7gS" secondAttribute="centerX" id="516-SJ-e0E"/>
                             <constraint firstItem="cr6-bJ-mvy" firstAttribute="leading" secondItem="HpI-V7-T1T" secondAttribute="leading" id="73p-aS-bOY"/>
-                            <constraint firstItem="iff-Qw-7gS" firstAttribute="top" secondItem="cr6-bJ-mvy" secondAttribute="bottom" constant="52" id="Jea-AS-wUm"/>
                             <constraint firstItem="cr6-bJ-mvy" firstAttribute="leading" secondItem="ht4-q8-xkW" secondAttribute="leadingMargin" id="NEe-G5-e0c"/>
-                            <constraint firstItem="YXL-u5-TeM" firstAttribute="top" secondItem="HpI-V7-T1T" secondAttribute="bottom" constant="8" id="NjT-M3-htg"/>
-                            <constraint firstItem="Rge-TZ-Oop" firstAttribute="top" secondItem="YXL-u5-TeM" secondAttribute="bottom" constant="116" id="T6i-pr-FN8"/>
+                            <constraint firstItem="Rge-TZ-Oop" firstAttribute="top" secondItem="YXL-u5-TeM" secondAttribute="bottom" constant="54" id="T6i-pr-FN8"/>
                             <constraint firstItem="cr6-bJ-mvy" firstAttribute="top" secondItem="EzL-M9-vhA" secondAttribute="bottom" id="Zzm-Tb-Jsm"/>
                             <constraint firstItem="cr6-bJ-mvy" firstAttribute="centerY" secondItem="NyD-yz-HmM" secondAttribute="centerY" id="a3T-zD-Cxy"/>
                             <constraint firstItem="HpI-V7-T1T" firstAttribute="trailing" secondItem="ht4-q8-xkW" secondAttribute="trailingMargin" id="bcZ-eD-tRQ"/>
                             <constraint firstItem="iff-Qw-7gS" firstAttribute="centerX" secondItem="HpI-V7-T1T" secondAttribute="centerX" id="c3m-UG-8hm"/>
                             <constraint firstItem="HpI-V7-T1T" firstAttribute="centerX" secondItem="YXL-u5-TeM" secondAttribute="centerX" id="cEH-u1-1FO"/>
-                            <constraint firstItem="iff-Qw-7gS" firstAttribute="leading" secondItem="ht4-q8-xkW" secondAttribute="leadingMargin" constant="39" id="e3A-XS-hUt"/>
-                            <constraint firstItem="YXL-u5-TeM" firstAttribute="leading" secondItem="ht4-q8-xkW" secondAttribute="leadingMargin" constant="72" id="jGq-G7-ipA"/>
                             <constraint firstItem="NyD-yz-HmM" firstAttribute="top" secondItem="EzL-M9-vhA" secondAttribute="bottom" constant="14" id="tRc-Zh-ki3"/>
                         </constraints>
                     </view>
@@ -230,28 +229,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-HW-309">
-                                <rect key="frame" x="39" y="71" width="297" height="157"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="95G-S0-hSe">
                                 <rect key="frame" x="0.0" y="384" width="375" height="283"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="283" id="Jv4-kp-g1v"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-HW-309">
+                                <rect key="frame" x="16" y="67" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P8q-tG-aBM" firstAttribute="top" secondItem="lHP-HW-309" secondAttribute="bottom" constant="439" id="2bp-f3-JS9"/>
-                            <constraint firstItem="lHP-HW-309" firstAttribute="leading" secondItem="nlU-6o-KqO" secondAttribute="leadingMargin" constant="23" id="72R-E1-qCa"/>
-                            <constraint firstItem="lHP-HW-309" firstAttribute="top" secondItem="cfs-2t-75p" secondAttribute="bottom" constant="51" id="86e-Uk-yYG"/>
-                            <constraint firstItem="lHP-HW-309" firstAttribute="centerX" secondItem="nlU-6o-KqO" secondAttribute="centerX" id="MiV-b9-SzV"/>
                             <constraint firstItem="95G-S0-hSe" firstAttribute="leading" secondItem="nlU-6o-KqO" secondAttribute="leadingMargin" constant="-16" id="SEI-m0-8SP"/>
                             <constraint firstItem="P8q-tG-aBM" firstAttribute="top" secondItem="95G-S0-hSe" secondAttribute="bottom" id="dYd-zN-48D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lHP-HW-309" secondAttribute="trailing" id="hHC-Je-JLX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="95G-S0-hSe" secondAttribute="trailing" constant="-16" id="hhA-92-zUI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lHP-HW-309" secondAttribute="leading" id="jA1-Un-4NO"/>
+                            <constraint firstItem="lHP-HW-309" firstAttribute="centerX" secondItem="nlU-6o-KqO" secondAttribute="centerX" id="li2-RI-Zsb"/>
+                            <constraint firstItem="lHP-HW-309" firstAttribute="top" secondItem="cfs-2t-75p" secondAttribute="bottom" constant="47" id="t8S-6K-Ynz"/>
                         </constraints>
                     </view>
                     <connections>

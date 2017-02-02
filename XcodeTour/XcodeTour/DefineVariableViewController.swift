@@ -3,6 +3,7 @@ import UIKit
 class DefineVariableViewController: UIViewController {
 
     //Define any instance variables here
+    var formattedTextArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,19 +25,19 @@ class DefineVariableViewController: UIViewController {
         let data2 = Data(buffer: UnsafeBufferPointer(start: data1, count: data1.count))
         let data3 = NSString(data: data2, encoding: String.Encoding.utf8.rawValue)
         let formattedText = (data3?.capitalized)!
-        let formattedTextArray = [formattedText]
-        
-        //TODO: You have to somehow find a way to transfer the values from formattedTextArray to the textToDisplay
-        //Hint: You need to find a way to store the value so you can access it in a different function
+        self.formattedTextArray = [formattedText]
 
+        // TODO: You have to somehow find a way to transfer the values from formattedTextArray to the textToDisplay
+        // Hint: You need to find a way to store the value so you can access it in a different function
+        
         self.matchTheArrayHere()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? NiceWorkViewController {
             
-            //TODO: Get textToDisplay to equal formattedTextArray
-            destinationVC.textToDisplay = []//Replace this
+            // TODO: Get textToDisplay to equal formattedTextArray
+            destinationVC.textToDisplay = self.formattedTextArray
         }
     }
 }

@@ -16,12 +16,10 @@ class FundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.discoverFunds()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func discoverFunds() {
@@ -35,9 +33,9 @@ class FundsViewController: UIViewController {
             amountLeft = String(recovery10)
             
             if Int(amountLeft) == 1000000 {
-                self.success()
+                success()
             } else {
-                self.fail()
+                fail()
             }
         }
         task.resume()

@@ -13,10 +13,9 @@ class OptionalsViewController: UIViewController {
     @IBOutlet weak var textOutput: UILabel!
     var successCount = 0
     var didBecomeNull = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func testForOptional(_ sender: Any) {
@@ -26,8 +25,8 @@ class OptionalsViewController: UIViewController {
             passInNonOptional(unwrappedString)
         }
         
-        self.successCount += 1
-        if (self.successCount == 3 && didBecomeNull) {
+        successCount += 1
+        if (successCount >= 3 && didBecomeNull) {
             textOutput.text = "Good job! You've completed this portion. Move on to the next"
         }
     }
@@ -41,13 +40,12 @@ class OptionalsViewController: UIViewController {
         if randomNumber == 0 {
             return "Non-Null String Returned. You got lucky! Try again!"
         } else {
-            self.didBecomeNull = true
+            didBecomeNull = true
             textOutput.text = "NULL String Returned. You handled it well! Good job!"
             return nil
         }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

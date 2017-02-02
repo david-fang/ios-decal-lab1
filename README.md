@@ -32,19 +32,19 @@ Once you've donwloaded the files onto your computer, open up the file **XcodeTou
 Before starting, it may be helpful to open the file **Main.storyboard** (found in your project navigator in Xcode) to see the layout of this lab before starting.
 
 ## Problem 1: Defining Variables ##
-If you open up **DefineVariableViewController.swift**, you'll notice that there are two "YOUR CODE HERE" sections. The goal of this problem is have you define a variable that can be used to transfer data between view controllers. 
+If you open up **DefineVariableViewController.swift**, you'll notice that there are two "TODO" sections. The goal of this problem is to define a variable that can be used to transfer data between view controllers (different screens within an app). 
 
-In the `getTextToDisplay` method, there is a `formattedTextArray` variable. In the `prepareForSegue` method, there is a `textToDisplay` property of `destinationVC` being set to an empty array. Your goal is to make these two ends meet by making the `textToDisplay` property = `formattedTextArray`.
+In the `getTextToDisplay` method, there is a `formattedTextArray` variable. In the `prepareForSegue` method, there is a `textToDisplay` property of `destinationVC` currently set to an empty array. Your goal is to make these two ends meet by making the `textToDisplay` property equal the value stored in `formattedTextArray`.
 
 To see if you properly transferred the data, run your application. If you succeeded, move on to the next part of the lab by moving the entry point arrow (found in **Main.storyboard**) to the View Controller labeled "2".
 
 ## Problem 2: Working with Optionals ##
-Run the app and read what's on the screen. When you press proceed, you'll see a button that says "Generate String". If you visit **OptionalsViewController.swift**, you'll see that there is a `returnStringAtRandom` function that returns a String? (Remember: ? means a variable can take on a nil value). If you click "Generate String" enough times, the app should crash. Look carefully where it says "YOUR CODE HERE" and use your knowledge about optionals to find out why this is true.
+Run the app and read what's on the screen. When you press proceed, you'll see a button that says "Generate String". If you visit **OptionalsViewController.swift**, you'll see that there is a `returnStringAtRandom` function that returns a String? (Remember: ? means a variable can take on a nil value). If you click "Generate String" enough times, the app should crash. Look carefully at the code under the "TODO" and use your knowledge about optionals to find out why this is true.
 
 If you passed this stage, move on to the next part of the lab by moving the entry point arrow (found in **Main.storyboard**) to the View Controller labeled "3".
 
 ## Problem 3: Using the Debugger ##
-In this problem, you have one goal and one goal only: Recover the public funds that Chancellor Dirks ruthlessly stole. First run the app and see what happens (after transfering the entry point). Then follow the instructions in the code to figure out the current value of our school's funds (`amountLeft`) using the debugging skills taught in lecture and find the right constant using the search skills also taught in lecture. Add these together to get the appropriate value. If there are enough funds, you will have passed the lab!
+In this problem, you have one goal and one goal only: Recover the public funds that Chancellor Dirks ruthlessly stole. First run the app and see what happens. Then follow the instructions in the code to figure out the current value of our school's funds (`amountLeft`) using the debugging skills taught in lecture and find the right constant using the search skills also taught in lecture. Add these together to get the appropriate value. If there are enough funds, you will have passed the lab!
 
 *Note - there's a network request in this view controller, so give the view some time to load.
 

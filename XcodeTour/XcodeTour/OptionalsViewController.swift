@@ -25,6 +25,8 @@ class OptionalsViewController: UIViewController {
             passInNonOptional(unwrappedString)
         }
         
+
+        
         successCount += 1
         if (successCount >= 3 && didBecomeNull) {
             textOutput.text = "Good job! You've completed this portion. Move on to the next"

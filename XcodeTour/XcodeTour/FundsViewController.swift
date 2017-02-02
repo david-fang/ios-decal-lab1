@@ -27,15 +27,19 @@ class FundsViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             
             var amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
-        
-            //TODO: Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
-            //YOU MAY NOT USE INTEGER VALUES HERE, THERE IS A PREDEFINED CONSTANT SOMEWHERE IN THE PROJECT THAT YOU HAVE TO FIND
-            amountLeft = String(recovery10)
+            
+            // TODO: Use the debugger to figure out how much money is left (remember, you can use the "po" operator in the console to run Swift code while debugging).
+            // Then, determine how much money is missing from our original $1,000,000 and add that back to amountLeft to recover the funds.
+            // NOTE: YOU MAY NOT USE INTEGER VALUES HERE; INSTEAD, SEARCH FOR A PREDEFINED CONSTANT WITHIN THE PROJECT THAT YOU CAN REFERENCE IN PLACE OF NUMERICAL VALUES.
+
+            if let remainingFunds = Int(amountLeft) {
+                amountLeft = String(remainingFunds + recovery9)
+            }
             
             if Int(amountLeft) == 1000000 {
-                success()
+                self.success()
             } else {
-                fail()
+                self.fail()
             }
         }
         task.resume()

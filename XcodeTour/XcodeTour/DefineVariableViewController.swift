@@ -30,7 +30,7 @@ class DefineVariableViewController: UIViewController {
         // TODO: You have to somehow find a way to transfer the values from formattedTextArray to the textToDisplay
         // Hint: You need to find a way to store the value so you can access it in a different function
         
-        self.matchTheArrayHere()
+        matchTheArrayHere()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

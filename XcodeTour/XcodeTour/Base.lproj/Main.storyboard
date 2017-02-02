@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gaa-Ll-21n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4x-Si-m4y">
-                                <rect key="frame" x="88" y="421" width="198" height="125"/>
+                                <rect key="frame" x="108.5" y="421" width="157" height="125"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Proceed!">
                                     <color key="titleColor" red="0.0" green="0.33333333329999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,7 +122,6 @@
                             <constraint firstItem="6QH-Gg-7aM" firstAttribute="leading" secondItem="Wms-BE-hby" secondAttribute="leadingMargin" id="Xw6-4W-QZz"/>
                             <constraint firstItem="a8e-XT-dey" firstAttribute="trailing" secondItem="Wms-BE-hby" secondAttribute="trailingMargin" id="bHn-pn-t0g"/>
                             <constraint firstItem="YD3-uH-AcU" firstAttribute="baseline" secondItem="6QH-Gg-7aM" secondAttribute="firstBaseline" id="eKn-p9-MwZ"/>
-                            <constraint firstItem="s4x-Si-m4y" firstAttribute="leading" secondItem="Wms-BE-hby" secondAttribute="leadingMargin" constant="72" id="f7D-Ey-oEw"/>
                             <constraint firstItem="6QH-Gg-7aM" firstAttribute="top" secondItem="1X5-xR-EVv" secondAttribute="bottom" id="h06-X4-IHg"/>
                             <constraint firstItem="GLD-MB-72m" firstAttribute="leading" secondItem="Wms-BE-hby" secondAttribute="leadingMargin" constant="39" id="hBH-tv-aqy"/>
                             <constraint firstItem="6QH-Gg-7aM" firstAttribute="centerY" secondItem="YD3-uH-AcU" secondAttribute="centerY" id="jUg-0q-P3R"/>

@@ -40,18 +40,19 @@ class FundsViewController: UIViewController {
             }
         }
         task.resume()
-        
-
     }
+    
     func success() {
         textView.text = "Congrats, you've recovered the public funds and finished this lab!"
         textView.textColor = UIColor.green
         imageView.image = UIImage(named: "nice")
     }
+
     func fail() {
         textView.text = "Oops, you've recovered the wrong amount, remember to carefully pick the value"
         imageView.image = UIImage(named: "tryagain")
     }
+
     func print(_ items: Any?) {
         //You are not allowed to use print to debug!
         print("DON'T USE PRINT STATEMENT")
